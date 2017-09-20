@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11818,7 +11818,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">view_sentence_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -11908,7 +11908,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_to_ids</span><span class="p">(</span><span class="n">source_text</span><span class="p">,</span> <span class="n">target_text</span><span class="p">,</span> <span class="n">source_vocab_to_int</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">):</span>
@@ -11926,6 +11926,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
                      
     <span class="n">target_id_text</span> <span class="o">=</span> <span class="p">[[</span><span class="n">target_vocab_to_int</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;UNK&gt;&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)]</span>
                      <span class="o">+</span> <span class="p">[</span><span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;EOS&gt;&#39;</span><span class="p">]]</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">target_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">source_id_text</span><span class="p">,</span> <span class="n">target_id_text</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -11946,7 +11947,8 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Tests Passed
+<pre>{&#39;&lt;PAD&gt;&#39;: 0, &#39;&lt;EOS&gt;&#39;: 1, &#39;&lt;UNK&gt;&#39;: 2, &#39;&lt;GO&gt;&#39;: 3, &#39;new&#39;: 4, &#39;calme&#39;: 5, &#39;jersey&#39;: 6, &#39;en&#39;: 7, &#39;fait&#39;: 8, &#39;,&#39;: 9, &#39;juillet&#39;: 10, &#39;automne&#39;: 11, &#39;parfois&#39;: 12, &#39;généralement&#39;: 13, &#39;mars&#39;: 14, &#39;avril&#39;: 15, &#39;pendant&#39;: 16, &#39;septembre&#39;: 17, &#39;habituellement&#39;: 18, &#39;légère&#39;: 19, &#39;chaud&#39;: 20, &#39;il&#39;: 21, &#39;et&#39;: 22, &#39;neigeux&#39;: 23, &#39;.&#39;: 24, &#39;froid&#39;: 25, &#39;juin&#39;: 26, &#39;novembre&#39;: 27, &#39;états-unis&#39;: 28, &#34;l&#39;&#34;: 29, &#39;california&#39;: 30, &#39;les&#39;: 31, &#39;gèle&#39;: 32, &#39;est&#39;: 33}
+Tests Passed
 </pre>
 </div>
 </div>
@@ -11967,7 +11969,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11977,6 +11979,22 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;&lt;PAD&gt;&#39;: 0, &#39;&lt;EOS&gt;&#39;: 1, &#39;&lt;UNK&gt;&#39;: 2, &#39;&lt;GO&gt;&#39;: 3, &#39;allions&#39;: 4, &#39;lions&#39;: 5, &#39;new&#39;: 6, &#39;allez&#39;: 7, &#39;es-tu&#39;: 8, &#39;mars&#39;: 9, &#39;avril&#39;: 10, &#39;pendant&#39;: 11, &#39;bananes&#39;: 12, &#39;chien&#39;: 13, &#39;dans&#39;: 14, &#39;été&#39;: 15, &#39;vit&#39;: 16, &#39;que&#39;: 17, &#39;chiens&#39;: 18, &#39;je&#39;: 19, &#39;prévois&#39;: 20, &#39;dernière&#39;: 21, &#39;blanc&#39;: 22, &#39;rouillé&#39;: 23, &#39;gel&#39;: 24, &#39;chat&#39;: 25, &#39;les&#39;: 26, &#39;aimés&#39;: 27, &#39;mouillée&#39;: 28, &#39;pomme&#39;: 29, &#39;veulent&#39;: 30, &#39;as-tu&#39;: 31, &#39;relaxant&#39;: 32, &#39;redoutée&#39;: 33, &#39;redouté&#39;: 34, &#39;tranquille&#39;: 35, &#39;voiture&#39;: 36, &#39;blanche&#39;: 37, &#39;où&#39;: 38, &#39;août&#39;: 39, &#34;d&#39;&#34;: 40, &#39;petite&#39;: 41, &#39;trouvé&#39;: 42, &#39;moindres&#39;: 43, &#39;allé&#39;: 44, &#39;raisin&#39;: 45, &#39;comment&#39;: 46, &#39;vieux&#39;: 47, &#34;l&#39;&#34;: 48, &#39;rendre&#39;: 49, &#39;bien&#39;: 50, &#39;voulez&#39;: 51, &#39;détend&#39;: 52, &#34;j&#39;aime&#34;: 53, &#39;terrain&#39;: 54, &#34;n&#39;aimez&#34;: 55, &#39;fait&#39;: 56, &#39;va&#39;: 57, &#39;veut&#39;: 58, &#39;un&#39;: 59, &#39;lapins&#39;: 60, &#39;votre&#39;: 61, &#39;grosse&#39;: 62, &#39;manguiers&#39;: 63, &#39;neige&#39;: 64, &#39;pleut&#39;: 65, &#39;rouillée&#39;: 66, &#39;requins&#39;: 67, &#39;pas&#39;: 68, &#34;n&#39;êtes&#34;: 69, &#39;tout&#39;: 70, &#39;vert&#39;: 71, &#39;souvent&#39;: 72, &#39;aimé.&#39;: 73, &#39;football&#39;: 74, &#39;détestez&#39;: 75, &#39;chaux&#39;: 76, &#39;rouge&#39;: 77, &#39;plaît&#39;: 78, &#39;souris&#39;: 79, &#39;douce&#39;: 80, &#39;détendre&#39;: 81, &#39;aimé&#39;: 82, &#39;prévoyons&#39;: 83, &#39;occupé&#39;: 84, &#39;mouillé&#39;: 85, &#39;chinois&#39;: 86, &#39;noir&#39;: 87, &#39;détestait&#39;: 88, &#34;l&#39;orange&#34;: 89, &#39;février&#39;: 90, &#39;beau&#39;: 91, &#34;l&#39;école&#34;: 92, &#39;aiment&#39;: 93, &#39;animaux&#39;: 94, &#39;chats&#39;: 95, &#39;at&#39;: 96, &#39;chine&#39;: 97, &#39;cher&#39;: 98, &#39;préféré.&#39;: 99, &#39;est&#39;: 100, &#39;gelés&#39;: 101, &#39;difficile&#39;: 102, &#39;,&#39;: 103, &#39;durant&#39;: 104, &#39;petit&#39;: 105, &#39;traduis&#39;: 106, &#39;serpents&#39;: 107, &#34;qu&#39;il&#34;: 108, &#39;hiver&#39;: 109, &#39;aimait&#39;: 110, &#39;cette&#39;: 111, &#39;nouvelle&#39;: 112, &#39;conduisait&#39;: 113, &#39;neigeux&#39;: 114, &#39;notre&#39;: 115, &#39;était&#39;: 116, &#39;aimons&#39;: 117, &#39;préférées&#39;: 118, &#39;pense&#39;: 119, &#39;fruits&#39;: 120, &#39;automobile&#39;: 121, &#39;novembre&#39;: 122, &#39;gelé&#39;: 123, &#39;-&#39;: 124, &#39;?&#39;: 125, &#39;des&#39;: 126, &#39;lion&#39;: 127, &#39;petits&#39;: 128, &#39;entre&#39;: 129, &#39;citrons&#39;: 130, &#39;son&#39;: 131, &#39;portugais&#39;: 132, &#39;leur&#39;: 133, &#39;bleu&#39;: 134, &#39;citron&#39;: 135, &#39;calme&#39;: 136, &#39;le&#39;: 137, &#39;oranges&#39;: 138, &#34;l&#39;épicerie&#34;: 139, &#39;éléphants&#39;: 140, &#39;pourrait&#39;: 141, &#39;comme&#39;: 142, &#39;nos&#39;: 143, &#39;conduite&#39;: 144, &#39;printemps&#39;: 145, &#39;verte&#39;: 146, &#39;-elle&#39;: 147, &#39;quand&#39;: 148, &#39;animal&#39;: 149, &#39;aimée&#39;: 150, &#39;intention&#39;: 151, &#39;pousse&#39;: 152, &#39;pourquoi&#39;: 153, &#39;avons&#39;: 154, &#39;espagnol&#39;: 155, &#39;vers&#39;: 156, &#39;étaient&#39;: 157, &#39;prévoient&#39;: 158, &#39;brillante&#39;: 159, &#39;aux&#39;: 160, &#39;aimeraient&#39;: 161, &#39;juillet&#39;: 162, &#39;redoutés&#39;: 163, &#39;automne&#39;: 164, &#34;n&#39;est&#34;: 165, &#39;généralement&#39;: 166, &#34;l&#39;automne&#34;: 167, &#39;grandes&#39;: 168, &#39;cet&#39;: 169, &#39;préféré&#39;: 170, &#39;magnifique&#39;: 171, &#39;singe&#39;: 172, &#39;à&#39;: 173, &#39;vous&#39;: 174, &#39;belle&#39;: 175, &#39;pourraient&#39;: 176, &#39;conduit&#39;: 177, &#39;pêches&#39;: 178, &#39;allés&#39;: 179, &#39;frais&#39;: 180, &#39;envisagent&#39;: 181, &#39;leurs&#39;: 182, &#39;camion&#39;: 183, &#39;raisins&#39;: 184, &#39;trop&#39;: 185, &#34;l&#39;éléphant&#34;: 186, &#39;ont&#39;: 187, &#39;ce&#39;: 188, &#39;septembre&#39;: 189, &#39;i&#39;: 190, &#34;n&#39;a&#34;: 191, &#39;légère&#39;: 192, &#39;cépage&#39;: 193, &#39;décembre&#39;: 194, &#39;vais&#39;: 195, &#39;voudrait&#39;: 196, &#39;.&#39;: 197, &#39;la&#39;: 198, &#39;visiter&#39;: 199, &#39;petites&#39;: 200, &#39;-ce&#39;: 201, &#39;humide&#39;: 202, &#39;frisquet&#39;: 203, &#39;mai&#39;: 204, &#39;vont&#39;: 205, &#39;tour&#39;: 206, &#39;anglais&#39;: 207, &#39;qui&#39;: 208, &#39;vos&#39;: 209, &#39;au&#39;: 210, &#39;est-ce&#39;: 211, &#39;porcelaine&#39;: 212, &#39;traduction&#39;: 213, &#39;glaciales&#39;: 214, &#39;agréable&#39;: 215, &#39;mangues&#39;: 216, &#39;ses&#39;: 217, &#39;plus&#39;: 218, &#39;cheval&#39;: 219, &#39;vu&#39;: 220, &#39;peu&#39;: 221, &#39;janvier&#39;: 222, &#39;mangue&#39;: 223, &#39;ne&#39;: 224, &#39;noire&#39;: 225, &#39;jamais&#39;: 226, &#39;avez&#39;: 227, &#39;mon&#39;: 228, &#39;chaude&#39;: 229, &#39;pêche&#39;: 230, &#39;bleue&#39;: 231, &#39;enneigé&#39;: 232, &#39;déteste&#39;: 233, &#39;sur&#39;: 234, &#39;pamplemousse&#39;: 235, &#39;vieille&#39;: 236, &#39;california&#39;: 237, &#39;nouveau&#39;: 238, &#39;a&#39;: 239, &#39;elle&#39;: 240, &#39;proches&#39;: 241, &#39;mes&#39;: 242, &#39;aime&#39;: 243, &#39;merveilleux&#39;: 244, &#39;mais&#39;: 245, &#39;ours&#39;: 246, &#39;grands&#39;: 247, &#39;parfois&#39;: 248, &#34;n&#39;aimait&#34;: 249, &#39;requin&#39;: 250, &#39;t&#39;: 251, &#39;pommes&#39;: 252, &#39;-il&#39;: 253, &#39;pluvieux&#39;: 254, &#34;l&#39;animal&#34;: 255, &#39;pamplemousses&#39;: 256, &#39;éléphant&#39;: 257, &#39;ils&#39;: 258, &#39;moteur&#39;: 259, &#39;oiseau&#39;: 260, &#39;grand&#39;: 261, &#39;faire&#39;: 262, &#39;fraise&#39;: 263, &#34;l&#39;automobile&#34;: 264, &#39;êtes-vous&#39;: 265, &#39;visite&#39;: 266, &#34;qu&#39;elle&#34;: 267, &#39;fruit&#39;: 268, &#39;paris&#39;: 269, &#39;monde&#39;: 270, &#34;n&#39;aime&#34;: 271, &#39;enneigée&#39;: 272, &#39;détestons&#39;: 273, &#39;france&#39;: 274, &#39;dernier&#39;: 275, &#39;etats-unis&#39;: 276, &#39;oiseaux&#39;: 277, &#39;français&#39;: 278, &#39;pluie&#39;: 279, &#39;grande&#39;: 280, &#39;pluies&#39;: 281, &#39;maillot&#39;: 282, &#39;allons&#39;: 283, &#39;verts&#39;: 284, &#39;états-unis&#39;: 285, &#39;grosses&#39;: 286, &#39;chevaux&#39;: 287, &#39;rouille&#39;: 288, &#39;fraises&#39;: 289, &#39;amusant&#39;: 290, &#39;banane&#39;: 291, &#39;brillant&#39;: 292, &#34;n&#39;aiment&#34;: 293, &#39;jersey&#39;: 294, &#39;californie&#39;: 295, &#39;sec&#39;: 296, &#39;gros&#39;: 297, &#39;octobre&#39;: 298, &#39;pensez&#39;: 299, &#39;de&#39;: 300, &#39;aiment-ils&#39;: 301, &#39;préférés&#39;: 302, &#39;jaune&#39;: 303, &#39;voulaient&#39;: 304, &#39;prévoit&#39;: 305, &#39;cours&#39;: 306, &#39;en&#39;: 307, &#34;n&#39;aimons&#34;: 308, &#39;envisage&#39;: 309, &#39;favori&#39;: 310, &#39;ressort&#39;: 311, &#39;habituellement&#39;: 312, &#39;allée&#39;: 313, &#39;occupée&#39;: 314, &#39;clémentes&#39;: 315, &#39;moins&#39;: 316, &#39;bénigne&#39;: 317, &#39;voulait&#39;: 318, &#39;eiffel&#39;: 319, &#39;lapin&#39;: 320, &#39;apprécié&#39;: 321, &#39;serpent&#39;: 322, &#39;singes&#39;: 323, &#39;aimez&#39;: 324, &#39;aller&#39;: 325, &#39;nous&#39;: 326, &#39;limes&#39;: 327, &#39;inde&#39;: 328, &#39;traduire&#39;: 329, &#39;temps&#39;: 330, &#39;facile&#39;: 331, &#39;lui&#39;: 332, &#39;chaud&#39;: 333, &#39;congélation&#39;: 334, &#39;froid&#39;: 335, &#39;favoris&#39;: 336, &#34;l&#39;ours&#34;: 337, &#34;l&#39;oiseau&#34;: 338, &#34;c&#39;est&#34;: 339, &#39;gèle&#39;: 340, &#39;lac&#39;: 341, &#39;prochain&#39;: 342, &#39;poire&#39;: 343, &#39;préférée&#39;: 344, &#39;-ils&#39;: 345, &#39;une&#39;: 346, &#39;il&#39;: 347, &#39;et&#39;: 348, &#39;poires&#39;: 349, &#39;juin&#39;: 350, &#39;se&#39;: 351, &#39;doux&#39;: 352, &#39;sont&#39;: 353, &#39;mois&#39;: 354, &#39;sèche&#39;: 355, &#39;volant&#39;: 356, &#39;du&#39;: 357}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11993,7 +12011,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12004,9 +12022,28 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="kn">import</span> <span class="nn">problem_unittests</span> <span class="k">as</span> <span class="nn">tests</span>
 
 <span class="p">(</span><span class="n">source_int_text</span><span class="p">,</span> <span class="n">target_int_text</span><span class="p">),</span> <span class="p">(</span><span class="n">source_vocab_to_int</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">),</span> <span class="n">_</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_preprocess</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>358
+{&#39;&lt;PAD&gt;&#39;: 0, &#39;&lt;EOS&gt;&#39;: 1, &#39;&lt;UNK&gt;&#39;: 2, &#39;&lt;GO&gt;&#39;: 3, &#39;allions&#39;: 4, &#39;lions&#39;: 5, &#39;new&#39;: 6, &#39;allez&#39;: 7, &#39;es-tu&#39;: 8, &#39;mars&#39;: 9, &#39;avril&#39;: 10, &#39;pendant&#39;: 11, &#39;bananes&#39;: 12, &#39;chien&#39;: 13, &#39;dans&#39;: 14, &#39;été&#39;: 15, &#39;vit&#39;: 16, &#39;que&#39;: 17, &#39;chiens&#39;: 18, &#39;je&#39;: 19, &#39;prévois&#39;: 20, &#39;dernière&#39;: 21, &#39;blanc&#39;: 22, &#39;rouillé&#39;: 23, &#39;gel&#39;: 24, &#39;chat&#39;: 25, &#39;les&#39;: 26, &#39;aimés&#39;: 27, &#39;mouillée&#39;: 28, &#39;pomme&#39;: 29, &#39;veulent&#39;: 30, &#39;as-tu&#39;: 31, &#39;relaxant&#39;: 32, &#39;redoutée&#39;: 33, &#39;redouté&#39;: 34, &#39;tranquille&#39;: 35, &#39;voiture&#39;: 36, &#39;blanche&#39;: 37, &#39;où&#39;: 38, &#39;août&#39;: 39, &#34;d&#39;&#34;: 40, &#39;petite&#39;: 41, &#39;trouvé&#39;: 42, &#39;moindres&#39;: 43, &#39;allé&#39;: 44, &#39;raisin&#39;: 45, &#39;comment&#39;: 46, &#39;vieux&#39;: 47, &#34;l&#39;&#34;: 48, &#39;rendre&#39;: 49, &#39;bien&#39;: 50, &#39;voulez&#39;: 51, &#39;détend&#39;: 52, &#34;j&#39;aime&#34;: 53, &#39;terrain&#39;: 54, &#34;n&#39;aimez&#34;: 55, &#39;fait&#39;: 56, &#39;va&#39;: 57, &#39;veut&#39;: 58, &#39;un&#39;: 59, &#39;lapins&#39;: 60, &#39;votre&#39;: 61, &#39;grosse&#39;: 62, &#39;manguiers&#39;: 63, &#39;neige&#39;: 64, &#39;pleut&#39;: 65, &#39;rouillée&#39;: 66, &#39;requins&#39;: 67, &#39;pas&#39;: 68, &#34;n&#39;êtes&#34;: 69, &#39;tout&#39;: 70, &#39;vert&#39;: 71, &#39;souvent&#39;: 72, &#39;aimé.&#39;: 73, &#39;football&#39;: 74, &#39;détestez&#39;: 75, &#39;chaux&#39;: 76, &#39;rouge&#39;: 77, &#39;plaît&#39;: 78, &#39;souris&#39;: 79, &#39;douce&#39;: 80, &#39;détendre&#39;: 81, &#39;aimé&#39;: 82, &#39;prévoyons&#39;: 83, &#39;occupé&#39;: 84, &#39;mouillé&#39;: 85, &#39;chinois&#39;: 86, &#39;noir&#39;: 87, &#39;détestait&#39;: 88, &#34;l&#39;orange&#34;: 89, &#39;février&#39;: 90, &#39;beau&#39;: 91, &#34;l&#39;école&#34;: 92, &#39;aiment&#39;: 93, &#39;animaux&#39;: 94, &#39;chats&#39;: 95, &#39;at&#39;: 96, &#39;chine&#39;: 97, &#39;cher&#39;: 98, &#39;préféré.&#39;: 99, &#39;est&#39;: 100, &#39;gelés&#39;: 101, &#39;difficile&#39;: 102, &#39;,&#39;: 103, &#39;durant&#39;: 104, &#39;petit&#39;: 105, &#39;traduis&#39;: 106, &#39;serpents&#39;: 107, &#34;qu&#39;il&#34;: 108, &#39;hiver&#39;: 109, &#39;aimait&#39;: 110, &#39;cette&#39;: 111, &#39;nouvelle&#39;: 112, &#39;conduisait&#39;: 113, &#39;neigeux&#39;: 114, &#39;notre&#39;: 115, &#39;était&#39;: 116, &#39;aimons&#39;: 117, &#39;préférées&#39;: 118, &#39;pense&#39;: 119, &#39;fruits&#39;: 120, &#39;automobile&#39;: 121, &#39;novembre&#39;: 122, &#39;gelé&#39;: 123, &#39;-&#39;: 124, &#39;?&#39;: 125, &#39;des&#39;: 126, &#39;lion&#39;: 127, &#39;petits&#39;: 128, &#39;entre&#39;: 129, &#39;citrons&#39;: 130, &#39;son&#39;: 131, &#39;portugais&#39;: 132, &#39;leur&#39;: 133, &#39;bleu&#39;: 134, &#39;citron&#39;: 135, &#39;calme&#39;: 136, &#39;le&#39;: 137, &#39;oranges&#39;: 138, &#34;l&#39;épicerie&#34;: 139, &#39;éléphants&#39;: 140, &#39;pourrait&#39;: 141, &#39;comme&#39;: 142, &#39;nos&#39;: 143, &#39;conduite&#39;: 144, &#39;printemps&#39;: 145, &#39;verte&#39;: 146, &#39;-elle&#39;: 147, &#39;quand&#39;: 148, &#39;animal&#39;: 149, &#39;aimée&#39;: 150, &#39;intention&#39;: 151, &#39;pousse&#39;: 152, &#39;pourquoi&#39;: 153, &#39;avons&#39;: 154, &#39;espagnol&#39;: 155, &#39;vers&#39;: 156, &#39;étaient&#39;: 157, &#39;prévoient&#39;: 158, &#39;brillante&#39;: 159, &#39;aux&#39;: 160, &#39;aimeraient&#39;: 161, &#39;juillet&#39;: 162, &#39;redoutés&#39;: 163, &#39;automne&#39;: 164, &#34;n&#39;est&#34;: 165, &#39;généralement&#39;: 166, &#34;l&#39;automne&#34;: 167, &#39;grandes&#39;: 168, &#39;cet&#39;: 169, &#39;préféré&#39;: 170, &#39;magnifique&#39;: 171, &#39;singe&#39;: 172, &#39;à&#39;: 173, &#39;vous&#39;: 174, &#39;belle&#39;: 175, &#39;pourraient&#39;: 176, &#39;conduit&#39;: 177, &#39;pêches&#39;: 178, &#39;allés&#39;: 179, &#39;frais&#39;: 180, &#39;envisagent&#39;: 181, &#39;leurs&#39;: 182, &#39;camion&#39;: 183, &#39;raisins&#39;: 184, &#39;trop&#39;: 185, &#34;l&#39;éléphant&#34;: 186, &#39;ont&#39;: 187, &#39;ce&#39;: 188, &#39;septembre&#39;: 189, &#39;i&#39;: 190, &#34;n&#39;a&#34;: 191, &#39;légère&#39;: 192, &#39;cépage&#39;: 193, &#39;décembre&#39;: 194, &#39;vais&#39;: 195, &#39;voudrait&#39;: 196, &#39;.&#39;: 197, &#39;la&#39;: 198, &#39;visiter&#39;: 199, &#39;petites&#39;: 200, &#39;-ce&#39;: 201, &#39;humide&#39;: 202, &#39;frisquet&#39;: 203, &#39;mai&#39;: 204, &#39;vont&#39;: 205, &#39;tour&#39;: 206, &#39;anglais&#39;: 207, &#39;qui&#39;: 208, &#39;vos&#39;: 209, &#39;au&#39;: 210, &#39;est-ce&#39;: 211, &#39;porcelaine&#39;: 212, &#39;traduction&#39;: 213, &#39;glaciales&#39;: 214, &#39;agréable&#39;: 215, &#39;mangues&#39;: 216, &#39;ses&#39;: 217, &#39;plus&#39;: 218, &#39;cheval&#39;: 219, &#39;vu&#39;: 220, &#39;peu&#39;: 221, &#39;janvier&#39;: 222, &#39;mangue&#39;: 223, &#39;ne&#39;: 224, &#39;noire&#39;: 225, &#39;jamais&#39;: 226, &#39;avez&#39;: 227, &#39;mon&#39;: 228, &#39;chaude&#39;: 229, &#39;pêche&#39;: 230, &#39;bleue&#39;: 231, &#39;enneigé&#39;: 232, &#39;déteste&#39;: 233, &#39;sur&#39;: 234, &#39;pamplemousse&#39;: 235, &#39;vieille&#39;: 236, &#39;california&#39;: 237, &#39;nouveau&#39;: 238, &#39;a&#39;: 239, &#39;elle&#39;: 240, &#39;proches&#39;: 241, &#39;mes&#39;: 242, &#39;aime&#39;: 243, &#39;merveilleux&#39;: 244, &#39;mais&#39;: 245, &#39;ours&#39;: 246, &#39;grands&#39;: 247, &#39;parfois&#39;: 248, &#34;n&#39;aimait&#34;: 249, &#39;requin&#39;: 250, &#39;t&#39;: 251, &#39;pommes&#39;: 252, &#39;-il&#39;: 253, &#39;pluvieux&#39;: 254, &#34;l&#39;animal&#34;: 255, &#39;pamplemousses&#39;: 256, &#39;éléphant&#39;: 257, &#39;ils&#39;: 258, &#39;moteur&#39;: 259, &#39;oiseau&#39;: 260, &#39;grand&#39;: 261, &#39;faire&#39;: 262, &#39;fraise&#39;: 263, &#34;l&#39;automobile&#34;: 264, &#39;êtes-vous&#39;: 265, &#39;visite&#39;: 266, &#34;qu&#39;elle&#34;: 267, &#39;fruit&#39;: 268, &#39;paris&#39;: 269, &#39;monde&#39;: 270, &#34;n&#39;aime&#34;: 271, &#39;enneigée&#39;: 272, &#39;détestons&#39;: 273, &#39;france&#39;: 274, &#39;dernier&#39;: 275, &#39;etats-unis&#39;: 276, &#39;oiseaux&#39;: 277, &#39;français&#39;: 278, &#39;pluie&#39;: 279, &#39;grande&#39;: 280, &#39;pluies&#39;: 281, &#39;maillot&#39;: 282, &#39;allons&#39;: 283, &#39;verts&#39;: 284, &#39;états-unis&#39;: 285, &#39;grosses&#39;: 286, &#39;chevaux&#39;: 287, &#39;rouille&#39;: 288, &#39;fraises&#39;: 289, &#39;amusant&#39;: 290, &#39;banane&#39;: 291, &#39;brillant&#39;: 292, &#34;n&#39;aiment&#34;: 293, &#39;jersey&#39;: 294, &#39;californie&#39;: 295, &#39;sec&#39;: 296, &#39;gros&#39;: 297, &#39;octobre&#39;: 298, &#39;pensez&#39;: 299, &#39;de&#39;: 300, &#39;aiment-ils&#39;: 301, &#39;préférés&#39;: 302, &#39;jaune&#39;: 303, &#39;voulaient&#39;: 304, &#39;prévoit&#39;: 305, &#39;cours&#39;: 306, &#39;en&#39;: 307, &#34;n&#39;aimons&#34;: 308, &#39;envisage&#39;: 309, &#39;favori&#39;: 310, &#39;ressort&#39;: 311, &#39;habituellement&#39;: 312, &#39;allée&#39;: 313, &#39;occupée&#39;: 314, &#39;clémentes&#39;: 315, &#39;moins&#39;: 316, &#39;bénigne&#39;: 317, &#39;voulait&#39;: 318, &#39;eiffel&#39;: 319, &#39;lapin&#39;: 320, &#39;apprécié&#39;: 321, &#39;serpent&#39;: 322, &#39;singes&#39;: 323, &#39;aimez&#39;: 324, &#39;aller&#39;: 325, &#39;nous&#39;: 326, &#39;limes&#39;: 327, &#39;inde&#39;: 328, &#39;traduire&#39;: 329, &#39;temps&#39;: 330, &#39;facile&#39;: 331, &#39;lui&#39;: 332, &#39;chaud&#39;: 333, &#39;congélation&#39;: 334, &#39;froid&#39;: 335, &#39;favoris&#39;: 336, &#34;l&#39;ours&#34;: 337, &#34;l&#39;oiseau&#34;: 338, &#34;c&#39;est&#34;: 339, &#39;gèle&#39;: 340, &#39;lac&#39;: 341, &#39;prochain&#39;: 342, &#39;poire&#39;: 343, &#39;préférée&#39;: 344, &#39;-ils&#39;: 345, &#39;une&#39;: 346, &#39;il&#39;: 347, &#39;et&#39;: 348, &#39;poires&#39;: 349, &#39;juin&#39;: 350, &#39;se&#39;: 351, &#39;doux&#39;: 352, &#39;sont&#39;: 353, &#39;mois&#39;: 354, &#39;sèche&#39;: 355, &#39;volant&#39;: 356, &#39;du&#39;: 357}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12023,7 +12060,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12057,7 +12094,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>TensorFlow Version: 1.1.0
+<pre>TensorFlow Version: 1.3.0
 </pre>
 </div>
 </div>
@@ -12108,7 +12145,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_inputs</span><span class="p">():</span>
@@ -12147,7 +12184,21 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Tests Passed
+<pre>ERROR:tensorflow:==================================
+Object was never used (type &lt;class &#39;tensorflow.python.framework.ops.Operation&#39;&gt;):
+&lt;tf.Operation &#39;assert_rank_2/Assert/Assert&#39; type=Assert&gt;
+If you want to mark it as used call its &#34;mark_used()&#34; method.
+It was originally created here:
+[&#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/runpy.py&#34;, line 193, in _run_module_as_main\n    &#34;__main__&#34;, mod_spec)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/runpy.py&#34;, line 85, in _run_code\n    exec(code, run_globals)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel_launcher.py&#34;, line 16, in &lt;module&gt;\n    app.launch_new_instance()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/traitlets/config/application.py&#34;, line 658, in launch_instance\n    app.start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelapp.py&#34;, line 477, in start\n    ioloop.IOLoop.instance().start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/ioloop.py&#34;, line 177, in start\n    super(ZMQIOLoop, self).start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/ioloop.py&#34;, line 888, in start\n    handler_func(fd_obj, events)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/stack_context.py&#34;, line 277, in null_wrapper\n    return fn(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 440, in _handle_events\n    self._handle_recv()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 472, in _handle_recv\n    self._run_callback(callback, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 414, in _run_callback\n    callback(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/stack_context.py&#34;, line 277, in null_wrapper\n    return fn(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 283, in dispatcher\n    return self.dispatch_shell(stream, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 235, in dispatch_shell\n    handler(stream, idents, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 399, in execute_request\n    user_expressions, allow_stdin)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/ipkernel.py&#34;, line 196, in do_execute\n    res = shell.run_cell(code, store_history=store_history, silent=silent)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/zmqshell.py&#34;, line 533, in run_cell\n    return super(ZMQInteractiveShell, self).run_cell(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2717, in run_cell\n    interactivity=interactivity, compiler=compiler, result=result)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2827, in run_ast_nodes\n    if self.run_code(code, result):&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2881, in run_code\n    exec(code_obj, self.user_global_ns, self.user_ns)&#39;, &#39;File &#34;&lt;ipython-input-7-3c3013f33cc5&gt;&#34;, line 22, in &lt;module&gt;\n    tests.test_model_inputs(model_inputs)&#39;, &#39;File &#34;/Users/thaophung/deep-learning/language-translation/problem_unittests.py&#34;, line 106, in test_model_inputs\n    assert tf.assert_rank(lr, 0, message=\&#39;Learning Rate has wrong rank\&#39;)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/check_ops.py&#34;, line 617, in assert_rank\n    dynamic_condition, data, summarize)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/check_ops.py&#34;, line 571, in _assert_rank_condition\n    return control_flow_ops.Assert(condition, data, summarize=summarize)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 175, in wrapped\n    return _add_should_use_warning(fn(*args, **kwargs))&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 144, in _add_should_use_warning\n    wrapped = TFShouldUseWarningWrapper(x)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 101, in __init__\n    stack = [s.strip() for s in traceback.format_stack()]&#39;]
+==================================
+ERROR:tensorflow:==================================
+Object was never used (type &lt;class &#39;tensorflow.python.framework.ops.Operation&#39;&gt;):
+&lt;tf.Operation &#39;assert_rank_3/Assert/Assert&#39; type=Assert&gt;
+If you want to mark it as used call its &#34;mark_used()&#34; method.
+It was originally created here:
+[&#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/runpy.py&#34;, line 193, in _run_module_as_main\n    &#34;__main__&#34;, mod_spec)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/runpy.py&#34;, line 85, in _run_code\n    exec(code, run_globals)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel_launcher.py&#34;, line 16, in &lt;module&gt;\n    app.launch_new_instance()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/traitlets/config/application.py&#34;, line 658, in launch_instance\n    app.start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelapp.py&#34;, line 477, in start\n    ioloop.IOLoop.instance().start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/ioloop.py&#34;, line 177, in start\n    super(ZMQIOLoop, self).start()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/ioloop.py&#34;, line 888, in start\n    handler_func(fd_obj, events)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/stack_context.py&#34;, line 277, in null_wrapper\n    return fn(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 440, in _handle_events\n    self._handle_recv()&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 472, in _handle_recv\n    self._run_callback(callback, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/zmq/eventloop/zmqstream.py&#34;, line 414, in _run_callback\n    callback(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tornado/stack_context.py&#34;, line 277, in null_wrapper\n    return fn(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 283, in dispatcher\n    return self.dispatch_shell(stream, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 235, in dispatch_shell\n    handler(stream, idents, msg)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/kernelbase.py&#34;, line 399, in execute_request\n    user_expressions, allow_stdin)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/ipkernel.py&#34;, line 196, in do_execute\n    res = shell.run_cell(code, store_history=store_history, silent=silent)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/ipykernel/zmqshell.py&#34;, line 533, in run_cell\n    return super(ZMQInteractiveShell, self).run_cell(*args, **kwargs)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2717, in run_cell\n    interactivity=interactivity, compiler=compiler, result=result)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2827, in run_ast_nodes\n    if self.run_code(code, result):&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/IPython/core/interactiveshell.py&#34;, line 2881, in run_code\n    exec(code_obj, self.user_global_ns, self.user_ns)&#39;, &#39;File &#34;&lt;ipython-input-7-3c3013f33cc5&gt;&#34;, line 22, in &lt;module&gt;\n    tests.test_model_inputs(model_inputs)&#39;, &#39;File &#34;/Users/thaophung/deep-learning/language-translation/problem_unittests.py&#34;, line 107, in test_model_inputs\n    assert tf.assert_rank(keep_prob, 0, message=\&#39;Keep Probability has wrong rank\&#39;)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/check_ops.py&#34;, line 617, in assert_rank\n    dynamic_condition, data, summarize)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/check_ops.py&#34;, line 571, in _assert_rank_condition\n    return control_flow_ops.Assert(condition, data, summarize=summarize)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 175, in wrapped\n    return _add_should_use_warning(fn(*args, **kwargs))&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 144, in _add_should_use_warning\n    wrapped = TFShouldUseWarningWrapper(x)&#39;, &#39;File &#34;/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py&#34;, line 101, in __init__\n    stack = [s.strip() for s in traceback.format_stack()]&#39;]
+==================================
+Tests Passed
 </pre>
 </div>
 </div>
@@ -12168,7 +12219,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_decoder_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
@@ -12179,9 +12230,11 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="sd">    :param batch_size: Batch Size</span>
 <span class="sd">    :return: Preprocessed target data</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">)</span>
     <span class="c1"># TODO: Implement Function</span>
     <span class="n">ending</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">strided_slice</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">batch_size</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">dec_input</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">tf</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="n">batch_size</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;GO&gt;&#39;</span><span class="p">]),</span> <span class="n">ending</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">dec_input</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12202,7 +12255,9 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Tests Passed
+<pre>{&#39;&lt;GO&gt;&#39;: 3}
+{&#39;&lt;GO&gt;&#39;: 3}
+Tests Passed
 </pre>
 </div>
 </div>
@@ -12228,7 +12283,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encoding_layer</span><span class="p">(</span><span class="n">rnn_inputs</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> 
@@ -12251,13 +12306,12 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
     <span class="k">def</span> <span class="nf">make_cell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">):</span>
         <span class="n">enc_cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">LSTMCell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">,</span>
                                           <span class="n">initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform_initializer</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="n">seed</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+        <span class="n">enc_cell_drop</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">enc_cell</span><span class="p">,</span> <span class="n">output_keep_prob</span><span class="o">=</span><span class="n">keep_prob</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">enc_cell</span>
     
-    <span class="c1">#enc_cell = tf.contrib.rnn.MultiRNNCell([tf.contrib.rnn.DropoutWrapper(make_cell(rnn_size),</span>
-    <span class="c1">#                                                                     output_keep_prob=keep_prob)</span>
-      <span class="c1">#                                      for _ in range(num_layers)])</span>
+                                    
     <span class="n">enc_cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">MultiRNNCell</span><span class="p">([</span><span class="n">make_cell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)])</span>
-   <span class="c1">#enc_cell = tf.contrib.rnn.DropoutWrapper(enc_cell,keep_prob)</span>
+  
     <span class="n">enc_output</span><span class="p">,</span> <span class="n">enc_state</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">dynamic_rnn</span><span class="p">(</span><span class="n">enc_cell</span><span class="p">,</span> <span class="n">enc_embed_input</span><span class="p">,</span> 
                                              <span class="n">sequence_length</span><span class="o">=</span><span class="n">source_sequence_length</span><span class="p">,</span>
                                              <span class="n">dtype</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
@@ -12308,7 +12362,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> 
@@ -12326,7 +12380,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="sd">    :return: BasicDecoderOutput containing training logits and sample_id</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    
+    <span class="c1">#print(output_layer)</span>
     <span class="c1"># Helper for the training process. Used by BasicDecoder to read inputs</span>
     <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s2">&quot;decode&quot;</span><span class="p">):</span>
         <span class="n">training_helper</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">TrainingHelper</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">dec_embed_input</span><span class="p">,</span>
@@ -12340,6 +12394,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
         <span class="n">training_decoder_output</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">seq2seq</span><span class="o">.</span><span class="n">dynamic_decode</span><span class="p">(</span><span class="n">training_decoder</span><span class="p">,</span>
                                                                    <span class="n">impute_finished</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                                                    <span class="n">maximum_iterations</span><span class="o">=</span><span class="n">max_summary_length</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="c1">#print(training_decoder_output)</span>
         <span class="k">return</span> <span class="n">training_decoder_output</span>
 
 
@@ -12388,7 +12443,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span>
@@ -12476,7 +12531,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer</span><span class="p">(</span><span class="n">dec_input</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span>
@@ -12500,8 +12555,11 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="sd">    :return: Tuple of (Training BasicDecoderOutput, Inference BasicDecoderOutput)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
     
     <span class="n">target_vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_vocab_to_int</span><span class="p">)</span>
+    <span class="c1">#print(target_vocab_to_int)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_vocab_size</span><span class="p">)</span>
     <span class="n">dec_embeddings</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">([</span><span class="n">target_vocab_size</span><span class="p">,</span> <span class="n">decoding_embedding_size</span><span class="p">]))</span>
     <span class="n">dec_embed_input</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">embedding_lookup</span><span class="p">(</span><span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">dec_input</span><span class="p">)</span>
     
@@ -12510,28 +12568,39 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
         <span class="n">dec_cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">LSTMCell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">,</span>
                                           <span class="n">initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform_initializer</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
                                         <span class="c1">#reuse=tf.get_variable_scope().reuse)</span>
-        <span class="k">return</span> <span class="n">dec_cell</span>
-    
-   <span class="c1"># dec_cell = tf.contrib.rnn.MultiRNNCell([tf.contrib.rnn.DropoutWrapper(make_cell(rnn_size),</span>
-           <span class="c1">#                                                               output_keep_prob=keep_prob)</span>
-  <span class="c1">#                                          for _ in range(num_layers)])</span>
+        <span class="n">dec_cell_drop</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">dec_cell</span><span class="p">,</span> <span class="n">output_keep_prob</span><span class="o">=</span><span class="n">keep_prob</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dec_cell_drop</span>
     
     <span class="n">dec_cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">MultiRNNCell</span><span class="p">([</span><span class="n">make_cell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)])</span>
-                                           
-                                     
+    
     <span class="n">output_layer</span><span class="o">=</span><span class="n">Dense</span><span class="p">(</span><span class="n">target_vocab_size</span><span class="p">,</span>
                       <span class="n">kernel_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal_initializer</span><span class="p">(</span><span class="n">mean</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
     
     <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s2">&quot;decode&quot;</span><span class="p">):</span>
-        <span class="n">training_decoder_output</span> <span class="o">=</span> <span class="n">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> 
-                         <span class="n">target_sequence_length</span><span class="p">,</span> <span class="n">max_target_sequence_length</span><span class="p">,</span> 
-                         <span class="n">output_layer</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
-    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s2">&quot;decoder&quot;</span><span class="p">,</span><span class="n">reuse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">train_decoder_output</span> <span class="o">=</span> <span class="n">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> 
+                                                       <span class="n">dec_cell</span><span class="p">,</span> 
+                                                       <span class="n">dec_embed_input</span><span class="p">,</span> 
+                                                       <span class="n">target_sequence_length</span><span class="p">,</span> 
+                                                       <span class="n">max_target_sequence_length</span><span class="p">,</span> 
+                                                       <span class="n">output_layer</span><span class="p">,</span> 
+                                                       <span class="n">keep_prob</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">train_decoder_output</span><span class="o">.</span><span class="n">rnn_output</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">train_decoder_output</span><span class="o">.</span><span class="n">sample_id</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">())</span>
         
-        <span class="n">inference_decoder_output</span> <span class="o">=</span> <span class="n">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;GO&gt;&#39;</span><span class="p">],</span>
-                         <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;EOS&gt;&#39;</span><span class="p">],</span> <span class="n">max_target_sequence_length</span><span class="p">,</span>
-                         <span class="n">target_vocab_size</span><span class="p">,</span> <span class="n">output_layer</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">training_decoder_output</span><span class="p">,</span> <span class="n">inference_decoder_output</span>
+        
+    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s2">&quot;decoder&quot;</span><span class="p">,</span><span class="n">reuse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="n">infer_logits_output</span> <span class="o">=</span> <span class="n">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> 
+                                                        <span class="n">dec_cell</span><span class="p">,</span> 
+                                                        <span class="n">dec_embeddings</span><span class="p">,</span> 
+                                                        <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;GO&gt;&#39;</span><span class="p">],</span>
+                                                        <span class="n">target_vocab_to_int</span><span class="p">[</span><span class="s1">&#39;&lt;EOS&gt;&#39;</span><span class="p">],</span> 
+                                                        <span class="n">max_target_sequence_length</span><span class="p">,</span>
+                                                        <span class="n">target_vocab_size</span><span class="p">,</span> 
+                                                        <span class="n">output_layer</span><span class="p">,</span> 
+                                                        <span class="n">batch_size</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
+        <span class="c1">##print(infer_decoder_output)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">infer_logits_output</span><span class="o">.</span><span class="n">sample_id</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">())</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">train_decoder_output</span><span class="p">,</span> <span class="n">infer_logits_output</span><span class="p">)</span>
 
 
 
@@ -12552,107 +12621,36 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="output_area">
 <div class="prompt"></div>
 
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>64
+2
+[64, None, 2]
+[64, None]
+[64, None]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-72-42e3162d69ce&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     59</span> DON<span class="ansi-red-fg">&#39;</span>T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
-<span class="ansi-green-intense-fg ansi-bold">     60</span> &#34;&#34;&#34;
-<span class="ansi-green-fg">---&gt; 61</span><span class="ansi-red-fg"> </span>tests<span class="ansi-blue-fg">.</span>test_decoding_layer<span class="ansi-blue-fg">(</span>decoding_layer<span class="ansi-blue-fg">)</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-23-d23ae3d0dda8&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     73</span> DON<span class="ansi-red-fg">&#39;</span>T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
+<span class="ansi-green-intense-fg ansi-bold">     74</span> &#34;&#34;&#34;
+<span class="ansi-green-fg">---&gt; 75</span><span class="ansi-red-fg"> </span>tests<span class="ansi-blue-fg">.</span>test_decoding_layer<span class="ansi-blue-fg">(</span>decoding_layer<span class="ansi-blue-fg">)</span>
 
 <span class="ansi-green-fg">/Users/thaophung/deep-learning/language-translation/problem_unittests.py</span> in <span class="ansi-cyan-fg">test_decoding_layer</span><span class="ansi-blue-fg">(decoding_layer)</span>
-<span class="ansi-green-intense-fg ansi-bold">    185</span>                                                    batch_size<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    186</span>                                                    keep_prob<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 187</span><span class="ansi-red-fg">                                                    embedding_size)
-</span><span class="ansi-green-intense-fg ansi-bold">    188</span> 
-<span class="ansi-green-intense-fg ansi-bold">    189</span> 
+<span class="ansi-green-intense-fg ansi-bold">    195</span> 
+<span class="ansi-green-intense-fg ansi-bold">    196</span>         <span class="ansi-green-fg">assert</span> train_decoder_output<span class="ansi-blue-fg">.</span>rnn_output<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>as_list<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span>batch_size<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> vocab_size<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-red-fg"> </span><span class="ansi-red-fg">\</span>
+<span class="ansi-green-fg">--&gt; 197</span><span class="ansi-red-fg">             </span><span class="ansi-blue-fg">&#39;Wrong shape returned.  Found {}&#39;</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>train_decoder_output<span class="ansi-blue-fg">.</span>rnn_output<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    198</span>         <span class="ansi-green-fg">assert</span> infer_logits_output<span class="ansi-blue-fg">.</span>sample_id<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>as_list<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span>batch_size<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-red-fg"> </span><span class="ansi-red-fg">\</span>
+<span class="ansi-green-intense-fg ansi-bold">    199</span>              <span class="ansi-blue-fg">&#39;Wrong shape returned.  Found {}&#39;</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>infer_logits_output<span class="ansi-blue-fg">.</span>sample_id<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">&lt;ipython-input-72-42e3162d69ce&gt;</span> in <span class="ansi-cyan-fg">decoding_layer</span><span class="ansi-blue-fg">(dec_input, encoder_state, target_sequence_length, max_target_sequence_length, rnn_size, num_layers, target_vocab_to_int, target_vocab_size, batch_size, keep_prob, decoding_embedding_size)</span>
-<span class="ansi-green-intense-fg ansi-bold">     51</span>         inference_decoder_output = decoding_layer_infer(encoder_state, dec_cell, dec_embeddings, target_vocab_to_int[&#39;&lt;GO&gt;&#39;],
-<span class="ansi-green-intense-fg ansi-bold">     52</span>                          target_vocab_to_int<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;&lt;EOS&gt;&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> max_target_sequence_length<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 53</span><span class="ansi-red-fg">                          target_vocab_size, output_layer, batch_size, keep_prob)
-</span><span class="ansi-green-intense-fg ansi-bold">     54</span>     <span class="ansi-green-fg">return</span> training_decoder_output<span class="ansi-blue-fg">,</span> inference_decoder_output
-<span class="ansi-green-intense-fg ansi-bold">     55</span> 
-
-<span class="ansi-green-fg">&lt;ipython-input-71-e5bd184a186d&gt;</span> in <span class="ansi-cyan-fg">decoding_layer_infer</span><span class="ansi-blue-fg">(encoder_state, dec_cell, dec_embeddings, start_of_sequence_id, end_of_sequence_id, max_target_sequence_length, vocab_size, output_layer, batch_size, keep_prob)</span>
-<span class="ansi-green-intense-fg ansi-bold">     32</span>     inference_decoder_output = tf.contrib.seq2seq.dynamic_decode(inference_decoder,
-<span class="ansi-green-intense-fg ansi-bold">     33</span>                                                                     impute_finished<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 34</span><span class="ansi-red-fg">                                                                     maximum_iterations=max_target_sequence_length)[0]
-</span><span class="ansi-green-intense-fg ansi-bold">     35</span>     <span class="ansi-green-fg">return</span> inference_decoder_output
-<span class="ansi-green-intense-fg ansi-bold">     36</span> 
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/decoder.py</span> in <span class="ansi-cyan-fg">dynamic_decode</span><span class="ansi-blue-fg">(decoder, output_time_major, impute_finished, maximum_iterations, parallel_iterations, swap_memory, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    276</span>         ],
-<span class="ansi-green-intense-fg ansi-bold">    277</span>         parallel_iterations<span class="ansi-blue-fg">=</span>parallel_iterations<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 278</span><span class="ansi-red-fg">         swap_memory=swap_memory)
-</span><span class="ansi-green-intense-fg ansi-bold">    279</span> 
-<span class="ansi-green-intense-fg ansi-bold">    280</span>     final_outputs_ta <span class="ansi-blue-fg">=</span> res<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">while_loop</span><span class="ansi-blue-fg">(cond, body, loop_vars, shape_invariants, parallel_iterations, back_prop, swap_memory, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2621</span>     context <span class="ansi-blue-fg">=</span> WhileContext<span class="ansi-blue-fg">(</span>parallel_iterations<span class="ansi-blue-fg">,</span> back_prop<span class="ansi-blue-fg">,</span> swap_memory<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2622</span>     ops<span class="ansi-blue-fg">.</span>add_to_collection<span class="ansi-blue-fg">(</span>ops<span class="ansi-blue-fg">.</span>GraphKeys<span class="ansi-blue-fg">.</span>WHILE_CONTEXT<span class="ansi-blue-fg">,</span> context<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 2623</span><span class="ansi-red-fg">     </span>result <span class="ansi-blue-fg">=</span> context<span class="ansi-blue-fg">.</span>BuildLoop<span class="ansi-blue-fg">(</span>cond<span class="ansi-blue-fg">,</span> body<span class="ansi-blue-fg">,</span> loop_vars<span class="ansi-blue-fg">,</span> shape_invariants<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2624</span>     <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">   2625</span> 
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">BuildLoop</span><span class="ansi-blue-fg">(self, pred, body, loop_vars, shape_invariants)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2454</span>       self<span class="ansi-blue-fg">.</span>Enter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2455</span>       original_body_result, exit_vars = self._BuildLoop(
-<span class="ansi-green-fg">-&gt; 2456</span><span class="ansi-red-fg">           pred, body, original_loop_vars, loop_vars, shape_invariants)
-</span><span class="ansi-green-intense-fg ansi-bold">   2457</span>     <span class="ansi-green-fg">finally</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2458</span>       self<span class="ansi-blue-fg">.</span>Exit<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">_BuildLoop</span><span class="ansi-blue-fg">(self, pred, body, original_loop_vars, loop_vars, shape_invariants)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2404</span>         structure<span class="ansi-blue-fg">=</span>original_loop_vars<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   2405</span>         flat_sequence=vars_for_body_with_tensor_arrays)
-<span class="ansi-green-fg">-&gt; 2406</span><span class="ansi-red-fg">     </span>body_result <span class="ansi-blue-fg">=</span> body<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>packed_vars_for_body<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2407</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> nest<span class="ansi-blue-fg">.</span>is_sequence<span class="ansi-blue-fg">(</span>body_result<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2408</span>       body_result <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>body_result<span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/decoder.py</span> in <span class="ansi-cyan-fg">body</span><span class="ansi-blue-fg">(time, outputs_ta, state, inputs, finished)</span>
-<span class="ansi-green-intense-fg ansi-bold">    229</span>       &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">    230</span>       (next_outputs, decoder_state, next_inputs,
-<span class="ansi-green-fg">--&gt; 231</span><span class="ansi-red-fg">        decoder_finished) = decoder.step(time, inputs, state)
-</span><span class="ansi-green-intense-fg ansi-bold">    232</span>       next_finished <span class="ansi-blue-fg">=</span> math_ops<span class="ansi-blue-fg">.</span>logical_or<span class="ansi-blue-fg">(</span>decoder_finished<span class="ansi-blue-fg">,</span> finished<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    233</span>       <span class="ansi-green-fg">if</span> maximum_iterations <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/basic_decoder.py</span> in <span class="ansi-cyan-fg">step</span><span class="ansi-blue-fg">(self, time, inputs, state, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">    138</span>     &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">    139</span>     <span class="ansi-green-fg">with</span> ops<span class="ansi-blue-fg">.</span>name_scope<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;BasicDecoderStep&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span>time<span class="ansi-blue-fg">,</span> inputs<span class="ansi-blue-fg">,</span> state<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 140</span><span class="ansi-red-fg">       </span>cell_outputs<span class="ansi-blue-fg">,</span> cell_state <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_cell<span class="ansi-blue-fg">(</span>inputs<span class="ansi-blue-fg">,</span> state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    141</span>       <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>_output_layer <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    142</span>         cell_outputs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_output_layer<span class="ansi-blue-fg">(</span>cell_outputs<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs, state, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    951</span>                 state, [0, cur_state_pos], [-1, cell.state_size])
-<span class="ansi-green-intense-fg ansi-bold">    952</span>             cur_state_pos <span class="ansi-blue-fg">+=</span> cell<span class="ansi-blue-fg">.</span>state_size
-<span class="ansi-green-fg">--&gt; 953</span><span class="ansi-red-fg">           </span>cur_inp<span class="ansi-blue-fg">,</span> new_state <span class="ansi-blue-fg">=</span> cell<span class="ansi-blue-fg">(</span>cur_inp<span class="ansi-blue-fg">,</span> cur_state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    954</span>           new_states<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>new_state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    955</span>     new_states = (tuple(new_states) if self._state_is_tuple else
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs, state, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    396</span>     with _checked_scope(self, scope or &#34;lstm_cell&#34;,
-<span class="ansi-green-intense-fg ansi-bold">    397</span>                         initializer<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>_initializer<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 398</span><span class="ansi-red-fg">                         reuse=self._reuse) as unit_scope:
-</span><span class="ansi-green-intense-fg ansi-bold">    399</span>       <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>_num_unit_shards <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    400</span>         unit_scope.set_partitioner(
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/contextlib.py</span> in <span class="ansi-cyan-fg">__enter__</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">     80</span>     <span class="ansi-green-fg">def</span> __enter__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     81</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 82</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> next<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>gen<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     83</span>         <span class="ansi-green-fg">except</span> StopIteration<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     84</span>             <span class="ansi-green-fg">raise</span> RuntimeError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;generator didn&#39;t yield&#34;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">from</span> <span class="ansi-green-fg">None</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">_checked_scope</span><span class="ansi-blue-fg">(cell, scope, reuse, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     75</span>             <span class="ansi-blue-fg">&#34;this error will remain until then.)&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">     76</span>             % (cell, cell_scope.name, scope_name, type(cell).__name__,
-<span class="ansi-green-fg">---&gt; 77</span><span class="ansi-red-fg">                type(cell).__name__))
-</span><span class="ansi-green-intense-fg ansi-bold">     78</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     79</span>       weights_found <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
-
-<span class="ansi-red-fg">ValueError</span>: Attempt to reuse RNNCell &lt;tensorflow.contrib.rnn.python.ops.core_rnn_cell_impl.LSTMCell object at 0x12244fe80&gt; with a different variable scope than its first use.  First use of cell was with scope &#39;decode/decode/decoder/multi_rnn_cell/cell_0/lstm_cell&#39;, this attempt is with scope &#39;decoder/decoder/multi_rnn_cell/cell_0/lstm_cell&#39;.  Please create a new instance of the cell if you would like it to use a different set of weights.  If before you were using: MultiRNNCell([LSTMCell(...)] * num_layers), change to: MultiRNNCell([LSTMCell(...) for _ in range(num_layers)]).  If before you were using the same cell instance as both the forward and reverse cell of a bidirectional RNN, simply create two instances (one for forward, one for reverse).  In May 2017, we will start transitioning this cell&#39;s behavior to use existing stored weights, if any, when it is called with scope=None (which can lead to silent model degradation, so this error will remain until then.)</pre>
+<span class="ansi-red-fg">AssertionError</span>: Wrong shape returned.  Found (64, ?, 2)</pre>
 </div>
 </div>
 
@@ -12677,7 +12675,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seq2seq_model</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">target_data</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span>
@@ -12746,121 +12744,39 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <div class="output_area">
 <div class="prompt"></div>
 
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;&lt;EOS&gt;&#39;: 1, &#39;&lt;GO&gt;&#39;: 3}
+{&#39;&lt;EOS&gt;&#39;: 1, &#39;&lt;GO&gt;&#39;: 3}
+64
+2
+[64, None, 2]
+[64, None]
+BasicDecoderOutput(rnn_output=&lt;tf.Tensor &#39;decode/decode/decoder/transpose:0&#39; shape=(64, ?, 2) dtype=float32&gt;, sample_id=&lt;tf.Tensor &#39;decode/decode/decoder/transpose_1:0&#39; shape=(64, ?) dtype=int32&gt;)
+[64, None]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-59-b170f8ddc170&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-19-b170f8ddc170&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-intense-fg ansi-bold">     51</span> DON<span class="ansi-red-fg">&#39;</span>T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE
 <span class="ansi-green-intense-fg ansi-bold">     52</span> &#34;&#34;&#34;
 <span class="ansi-green-fg">---&gt; 53</span><span class="ansi-red-fg"> </span>tests<span class="ansi-blue-fg">.</span>test_seq2seq_model<span class="ansi-blue-fg">(</span>seq2seq_model<span class="ansi-blue-fg">)</span>
 
 <span class="ansi-green-fg">/Users/thaophung/deep-learning/language-translation/problem_unittests.py</span> in <span class="ansi-cyan-fg">test_seq2seq_model</span><span class="ansi-blue-fg">(seq2seq_model)</span>
-<span class="ansi-green-intense-fg ansi-bold">    243</span>                                                    rnn_size<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    244</span>                                                    num_layers<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 245</span><span class="ansi-red-fg">                                                    target_vocab_to_int)
-</span><span class="ansi-green-intense-fg ansi-bold">    246</span> 
-<span class="ansi-green-intense-fg ansi-bold">    247</span>         <span class="ansi-red-fg"># input_data, target_data, keep_prob, batch_size, sequence_length,</span>
+<span class="ansi-green-intense-fg ansi-bold">    254</span> 
+<span class="ansi-green-intense-fg ansi-bold">    255</span>         <span class="ansi-green-fg">assert</span> train_decoder_output<span class="ansi-blue-fg">.</span>rnn_output<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>as_list<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span>batch_size<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> vocab_size<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-red-fg"> </span><span class="ansi-red-fg">\</span>
+<span class="ansi-green-fg">--&gt; 256</span><span class="ansi-red-fg">             </span><span class="ansi-blue-fg">&#39;Wrong shape returned.  Found {}&#39;</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>train_decoder_output<span class="ansi-blue-fg">.</span>rnn_output<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    257</span>         <span class="ansi-green-fg">assert</span> infer_logits_output<span class="ansi-blue-fg">.</span>sample_id<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>as_list<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span>batch_size<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-red-fg"> </span><span class="ansi-red-fg">\</span>
+<span class="ansi-green-intense-fg ansi-bold">    258</span>              <span class="ansi-blue-fg">&#39;Wrong shape returned.  Found {}&#39;</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>infer_logits_output<span class="ansi-blue-fg">.</span>sample_id<span class="ansi-blue-fg">.</span>get_shape<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">&lt;ipython-input-59-b170f8ddc170&gt;</span> in <span class="ansi-cyan-fg">seq2seq_model</span><span class="ansi-blue-fg">(input_data, target_data, keep_prob, batch_size, source_sequence_length, target_sequence_length, max_target_sentence_length, source_vocab_size, target_vocab_size, enc_embedding_size, dec_embedding_size, rnn_size, num_layers, target_vocab_to_int)</span>
-<span class="ansi-green-intense-fg ansi-bold">     44</span>                                                                        batch_size<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">     45</span>                                                                        keep_prob<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 46</span><span class="ansi-red-fg">                                                                        dec_embedding_size)
-</span><span class="ansi-green-intense-fg ansi-bold">     47</span>     <span class="ansi-green-fg">return</span> training_decoder_output<span class="ansi-blue-fg">,</span> inference_decoder_output
-<span class="ansi-green-intense-fg ansi-bold">     48</span> 
-
-<span class="ansi-green-fg">&lt;ipython-input-49-40f813606838&gt;</span> in <span class="ansi-cyan-fg">decoding_layer</span><span class="ansi-blue-fg">(dec_input, encoder_state, target_sequence_length, max_target_sequence_length, rnn_size, num_layers, target_vocab_to_int, target_vocab_size, batch_size, keep_prob, decoding_embedding_size)</span>
-<span class="ansi-green-intense-fg ansi-bold">     51</span>         inference_decoder_output = decoding_layer_infer(encoder_state, dec_cell, dec_embeddings, target_vocab_to_int[&#39;&lt;GO&gt;&#39;],
-<span class="ansi-green-intense-fg ansi-bold">     52</span>                          target_vocab_to_int<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;&lt;EOS&gt;&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> max_target_sequence_length<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 53</span><span class="ansi-red-fg">                          target_vocab_size, output_layer, batch_size, keep_prob)
-</span><span class="ansi-green-intense-fg ansi-bold">     54</span>     <span class="ansi-green-fg">return</span> training_decoder_output<span class="ansi-blue-fg">,</span> inference_decoder_output
-<span class="ansi-green-intense-fg ansi-bold">     55</span> 
-
-<span class="ansi-green-fg">&lt;ipython-input-47-5607bbfa61df&gt;</span> in <span class="ansi-cyan-fg">decoding_layer_infer</span><span class="ansi-blue-fg">(encoder_state, dec_cell, dec_embeddings, start_of_sequence_id, end_of_sequence_id, max_target_sequence_length, vocab_size, output_layer, batch_size, keep_prob)</span>
-<span class="ansi-green-intense-fg ansi-bold">     31</span>     inference_decoder_output = tf.contrib.seq2seq.dynamic_decode(inference_decoder,
-<span class="ansi-green-intense-fg ansi-bold">     32</span>                                                                     impute_finished<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">---&gt; 33</span><span class="ansi-red-fg">                                                                     maximum_iterations=max_target_sequence_length)[0]
-</span><span class="ansi-green-intense-fg ansi-bold">     34</span>     <span class="ansi-green-fg">return</span> inference_decoder_output
-<span class="ansi-green-intense-fg ansi-bold">     35</span> 
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/decoder.py</span> in <span class="ansi-cyan-fg">dynamic_decode</span><span class="ansi-blue-fg">(decoder, output_time_major, impute_finished, maximum_iterations, parallel_iterations, swap_memory, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    276</span>         ],
-<span class="ansi-green-intense-fg ansi-bold">    277</span>         parallel_iterations<span class="ansi-blue-fg">=</span>parallel_iterations<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 278</span><span class="ansi-red-fg">         swap_memory=swap_memory)
-</span><span class="ansi-green-intense-fg ansi-bold">    279</span> 
-<span class="ansi-green-intense-fg ansi-bold">    280</span>     final_outputs_ta <span class="ansi-blue-fg">=</span> res<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">while_loop</span><span class="ansi-blue-fg">(cond, body, loop_vars, shape_invariants, parallel_iterations, back_prop, swap_memory, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2621</span>     context <span class="ansi-blue-fg">=</span> WhileContext<span class="ansi-blue-fg">(</span>parallel_iterations<span class="ansi-blue-fg">,</span> back_prop<span class="ansi-blue-fg">,</span> swap_memory<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2622</span>     ops<span class="ansi-blue-fg">.</span>add_to_collection<span class="ansi-blue-fg">(</span>ops<span class="ansi-blue-fg">.</span>GraphKeys<span class="ansi-blue-fg">.</span>WHILE_CONTEXT<span class="ansi-blue-fg">,</span> context<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 2623</span><span class="ansi-red-fg">     </span>result <span class="ansi-blue-fg">=</span> context<span class="ansi-blue-fg">.</span>BuildLoop<span class="ansi-blue-fg">(</span>cond<span class="ansi-blue-fg">,</span> body<span class="ansi-blue-fg">,</span> loop_vars<span class="ansi-blue-fg">,</span> shape_invariants<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2624</span>     <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">   2625</span> 
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">BuildLoop</span><span class="ansi-blue-fg">(self, pred, body, loop_vars, shape_invariants)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2454</span>       self<span class="ansi-blue-fg">.</span>Enter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2455</span>       original_body_result, exit_vars = self._BuildLoop(
-<span class="ansi-green-fg">-&gt; 2456</span><span class="ansi-red-fg">           pred, body, original_loop_vars, loop_vars, shape_invariants)
-</span><span class="ansi-green-intense-fg ansi-bold">   2457</span>     <span class="ansi-green-fg">finally</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2458</span>       self<span class="ansi-blue-fg">.</span>Exit<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py</span> in <span class="ansi-cyan-fg">_BuildLoop</span><span class="ansi-blue-fg">(self, pred, body, original_loop_vars, loop_vars, shape_invariants)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2404</span>         structure<span class="ansi-blue-fg">=</span>original_loop_vars<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   2405</span>         flat_sequence=vars_for_body_with_tensor_arrays)
-<span class="ansi-green-fg">-&gt; 2406</span><span class="ansi-red-fg">     </span>body_result <span class="ansi-blue-fg">=</span> body<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>packed_vars_for_body<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2407</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> nest<span class="ansi-blue-fg">.</span>is_sequence<span class="ansi-blue-fg">(</span>body_result<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2408</span>       body_result <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>body_result<span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/decoder.py</span> in <span class="ansi-cyan-fg">body</span><span class="ansi-blue-fg">(time, outputs_ta, state, inputs, finished)</span>
-<span class="ansi-green-intense-fg ansi-bold">    229</span>       &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">    230</span>       (next_outputs, decoder_state, next_inputs,
-<span class="ansi-green-fg">--&gt; 231</span><span class="ansi-red-fg">        decoder_finished) = decoder.step(time, inputs, state)
-</span><span class="ansi-green-intense-fg ansi-bold">    232</span>       next_finished <span class="ansi-blue-fg">=</span> math_ops<span class="ansi-blue-fg">.</span>logical_or<span class="ansi-blue-fg">(</span>decoder_finished<span class="ansi-blue-fg">,</span> finished<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    233</span>       <span class="ansi-green-fg">if</span> maximum_iterations <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/seq2seq/python/ops/basic_decoder.py</span> in <span class="ansi-cyan-fg">step</span><span class="ansi-blue-fg">(self, time, inputs, state, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">    138</span>     &#34;&#34;&#34;
-<span class="ansi-green-intense-fg ansi-bold">    139</span>     <span class="ansi-green-fg">with</span> ops<span class="ansi-blue-fg">.</span>name_scope<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;BasicDecoderStep&#34;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span>time<span class="ansi-blue-fg">,</span> inputs<span class="ansi-blue-fg">,</span> state<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 140</span><span class="ansi-red-fg">       </span>cell_outputs<span class="ansi-blue-fg">,</span> cell_state <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_cell<span class="ansi-blue-fg">(</span>inputs<span class="ansi-blue-fg">,</span> state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    141</span>       <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>_output_layer <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    142</span>         cell_outputs <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_output_layer<span class="ansi-blue-fg">(</span>cell_outputs<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs, state, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    951</span>                 state, [0, cur_state_pos], [-1, cell.state_size])
-<span class="ansi-green-intense-fg ansi-bold">    952</span>             cur_state_pos <span class="ansi-blue-fg">+=</span> cell<span class="ansi-blue-fg">.</span>state_size
-<span class="ansi-green-fg">--&gt; 953</span><span class="ansi-red-fg">           </span>cur_inp<span class="ansi-blue-fg">,</span> new_state <span class="ansi-blue-fg">=</span> cell<span class="ansi-blue-fg">(</span>cur_inp<span class="ansi-blue-fg">,</span> cur_state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    954</span>           new_states<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>new_state<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    955</span>     new_states = (tuple(new_states) if self._state_is_tuple else
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs, state, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    711</span>                              self<span class="ansi-blue-fg">.</span>_recurrent_input_noise<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    712</span>                              self._input_keep_prob)
-<span class="ansi-green-fg">--&gt; 713</span><span class="ansi-red-fg">     </span>output<span class="ansi-blue-fg">,</span> new_state <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_cell<span class="ansi-blue-fg">(</span>inputs<span class="ansi-blue-fg">,</span> state<span class="ansi-blue-fg">,</span> scope<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    714</span>     <span class="ansi-green-fg">if</span> _should_dropout<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>_state_keep_prob<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    715</span>       new_state = self._dropout(new_state, &#34;state&#34;,
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs, state, scope)</span>
-<span class="ansi-green-intense-fg ansi-bold">    396</span>     with _checked_scope(self, scope or &#34;lstm_cell&#34;,
-<span class="ansi-green-intense-fg ansi-bold">    397</span>                         initializer<span class="ansi-blue-fg">=</span>self<span class="ansi-blue-fg">.</span>_initializer<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 398</span><span class="ansi-red-fg">                         reuse=self._reuse) as unit_scope:
-</span><span class="ansi-green-intense-fg ansi-bold">    399</span>       <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>_num_unit_shards <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    400</span>         unit_scope.set_partitioner(
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/contextlib.py</span> in <span class="ansi-cyan-fg">__enter__</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">     80</span>     <span class="ansi-green-fg">def</span> __enter__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     81</span>         <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">---&gt; 82</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> next<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>gen<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     83</span>         <span class="ansi-green-fg">except</span> StopIteration<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     84</span>             <span class="ansi-green-fg">raise</span> RuntimeError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;generator didn&#39;t yield&#34;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">from</span> <span class="ansi-green-fg">None</span>
-
-<span class="ansi-green-fg">/Users/thaophung/anaconda/lib/python3.6/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</span> in <span class="ansi-cyan-fg">_checked_scope</span><span class="ansi-blue-fg">(cell, scope, reuse, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     75</span>             <span class="ansi-blue-fg">&#34;this error will remain until then.)&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">     76</span>             % (cell, cell_scope.name, scope_name, type(cell).__name__,
-<span class="ansi-green-fg">---&gt; 77</span><span class="ansi-red-fg">                type(cell).__name__))
-</span><span class="ansi-green-intense-fg ansi-bold">     78</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     79</span>       weights_found <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
-
-<span class="ansi-red-fg">ValueError</span>: Attempt to reuse RNNCell &lt;tensorflow.contrib.rnn.python.ops.core_rnn_cell_impl.LSTMCell object at 0x11f6cd978&gt; with a different variable scope than its first use.  First use of cell was with scope &#39;decode/decoder/multi_rnn_cell/cell_0/lstm_cell&#39;, this attempt is with scope &#39;decoder/decoder/multi_rnn_cell/cell_0/lstm_cell&#39;.  Please create a new instance of the cell if you would like it to use a different set of weights.  If before you were using: MultiRNNCell([LSTMCell(...)] * num_layers), change to: MultiRNNCell([LSTMCell(...) for _ in range(num_layers)]).  If before you were using the same cell instance as both the forward and reverse cell of a bidirectional RNN, simply create two instances (one for forward, one for reverse).  In May 2017, we will start transitioning this cell&#39;s behavior to use existing stored weights, if any, when it is called with scope=None (which can lead to silent model degradation, so this error will remain until then.)</pre>
+<span class="ansi-red-fg">AssertionError</span>: Wrong shape returned.  Found (64, ?, 2)</pre>
 </div>
 </div>
 
